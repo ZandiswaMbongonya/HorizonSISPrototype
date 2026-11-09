@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<div class="dashboard-page">
+
+    <div class="dashboard-heading">
+        <div>
+            <span class="dashboard-label">STUDENT PORTAL</span>
+            <h1>Welcome back, Thando!</h1>
+            <p>Here is an overview of your student account.</p>
+        </div>
+        <div class="student-profile">
+            <div class="profile-circle">TM</div>
+            <span>Thando Mokoena</span>
+        </div>
+    </div>
+
+    <div class="student-details">
+        <div>
+            <span>Student Number</span>
+            <strong>HPC20260045</strong>
+        </div>
+        <div>
+            <span>Enrolment Status</span>
+            <strong class="status-active">Registered</strong>
+        </div>
+        <div>
+            <span>Course</span>
+            <strong>Diploma in IT</strong>
+        </div>
+        <div>
+            <span>Academic Year</span>
+            <strong>2026</strong>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <section class="dashboard-card">
+            <div class="card-heading">
+                <h2>Fee Overview</h2>
+                <span class="card-icon">R</span>
+            </div>
+            <p class="card-description">Your current account balance</p>
+            <h3>R2,500.00</h3>
+            <span class="small-note">Outstanding fees</span>
+            <div class="progress-track">
+                <div class="progress-fill"></div>
+            </div>
+            <a href="#" class="dashboard-link">View payment history →</a>
+        </section>
+
+        <section class="dashboard-card">
+            <div class="card-heading">
+                <h2>Latest Announcements</h2>
+                <span class="card-icon">!</span>
+            </div>
+            <div class="announcement">
+                <strong>Examination Timetable</strong>
+                <p>The examination timetable is now available for students.</p>
+                <small>College Administration · 06 November 2026</small>
+            </div>
+            <div class="announcement">
+                <strong>Registration Updates</strong>
+                <p>Please check that your student details are up to date.</p>
+                <small>Admissions Office · 04 November 2026</small>
+            </div>
+            <a href="#" class="dashboard-link">View all announcements →</a>
+        </section>
+
+        <section class="dashboard-card timetable-card">
+            <div class="card-heading">
+                <h2>My Timetable</h2>
+                <span class="card-icon">C</span>
+            </div>
+            <div class="class-row">
+                <div class="date-box"><strong>10</strong><small>NOV</small></div>
+                <div><strong>Application Development</strong><small>09:00 – 11:00 · Room 204</small></div>
+            </div>
+            <div class="class-row">
+                <div class="date-box"><strong>12</strong><small>NOV</small></div>
+                <div><strong>Cloud Development</strong><small>11:00 – 13:00 · Room 105</small></div>
+            </div>
+            <div class="class-row">
+                <div class="date-box"><strong>14</strong><small>NOV</small></div>
+                <div><strong>Application Security</strong><small>09:00 – 11:00 · Room 203</small></div>
+            </div>
+            <a href="#" class="dashboard-link">View full timetable →</a>
+        </section>
+
+        <section class="dashboard-card">
+            <div class="card-heading">
+                <h2>Student Records</h2>
+                <span class="card-icon">✓</span>
+            </div>
+            <p class="card-description">Access your academic information.</p>
+            <div class="record-item">Personal information <span>View →</span></div>
+            <div class="record-item">Academic history <span>View →</span></div>
+            <div class="record-item">Course information <span>View →</span></div>
+            <a href="#" class="dashboard-link">View student profile →</a>
+        </section>
+
+    </div>
+</div>

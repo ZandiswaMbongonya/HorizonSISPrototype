@@ -1,0 +1,167 @@
+﻿@{
+    ViewData["Title"] = "Instructor Dashboard";
+}
+
+<div class="instructor-page">
+
+    <div class="instructor-heading">
+        <div>
+            <span class="dashboard-label">INSTRUCTOR PORTAL</span>
+            <h1>Welcome, Mr Dlamini!</h1>
+            <p>Manage your courses, learning materials and student assessments.</p>
+        </div>
+        <div class="instructor-profile">
+            <div class="profile-circle">MD</div>
+            <span>Mr Dlamini</span>
+        </div>
+    </div>
+
+    <div class="instructor-stats">
+        <div class="stat-card">
+            <span>Assigned Courses</span>
+            <strong>03</strong>
+            <small>Current academic year</small>
+        </div>
+        <div class="stat-card">
+            <span>Enrolled Students</span>
+            <strong>86</strong>
+            <small>Across assigned courses</small>
+        </div>
+        <div class="stat-card">
+            <span>Learning Materials</span>
+            <strong>12</strong>
+            <small>Uploaded resources</small>
+        </div>
+        <div class="stat-card">
+            <span>Assessments</span>
+            <strong>05</strong>
+            <small>Created this semester</small>
+        </div>
+    </div>
+
+    <div class="instructor-grid">
+
+        <section class="instructor-card">
+            <div class="instructor-card-heading">
+                <div>
+                    <h2>My Courses</h2>
+                    <p>Courses assigned to you</p>
+                </div>
+                <span class="card-icon">C</span>
+            </div>
+
+            <div class="course-item">
+                <strong>Application Development</strong>
+                <span>42 students</span>
+            </div>
+
+            <div class="course-item">
+                <strong>Cloud Development</strong>
+                <span>26 students</span>
+            </div>
+
+            <div class="course-item">
+                <strong>Application Security</strong>
+                <span>18 students</span>
+            </div>
+        </section>
+
+        <section class="instructor-card">
+            <div class="instructor-card-heading">
+                <div>
+                    <h2>Learning Materials</h2>
+                    <p>Upload and manage course resources</p>
+                </div>
+                <span class="card-icon">PDF</span>
+            </div>
+
+            <div class="material-item">
+                <div>
+                    <strong>Application Development Notes.pdf</strong>
+                    <small>Application Development · PDF</small>
+                </div>
+                <span class="uploaded-status">Uploaded</span>
+            </div>
+
+            <div class="material-item">
+                <div>
+                    <strong>Cloud Computing Study Guide.pdf</strong>
+                    <small>Cloud Development · PDF</small>
+                </div>
+                <span class="uploaded-status">Uploaded</span>
+            </div>
+
+            <div class="upload-area">
+                <strong>+ Upload Learning Material</strong>
+                <p>Select a course and add study resources for students.</p>
+                <input type="file" accept=".pdf,.doc,.docx,.ppt,.pptx" />
+            </div>
+        </section>
+
+        <section class="instructor-card assessment-card">
+            <div class="instructor-card-heading">
+                <div>
+                    <h2>Assessment Management</h2>
+                    <p>Manage student assessments and marks</p>
+                </div>
+                <span class="card-icon">A</span>
+            </div>
+
+            <div class="assessment-summary">
+                <div>
+                    <strong>Application Development – Test 1</strong>
+                    <small>Course: Application Development</small>
+                </div>
+                <span class="assessment-status">Marks Pending</span>
+            </div>
+
+            <div class="assessment-summary">
+                <div>
+                    <strong>Cloud Development – Assignment 1</strong>
+                    <small>Course: Cloud Development</small>
+                </div>
+                <span class="published-status">Published</span>
+            </div>
+
+            <div class="marks-table">
+                <h3>Student Marks</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Assessment</th>
+                            <th>Mark</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thando Mokoena</td>
+                            <td>Test 1</td>
+                            <td>78%</td>
+                            <td>Recorded</td>
+                        </tr>
+                        <tr>
+                            <td>Lebo Nkosi</td>
+                            <td>Test 1</td>
+                            <td>85%</td>
+                            <td>Recorded</td>
+                        </tr>
+                        <tr>
+                            <td>Ayanda Dube</td>
+                            <td>Test 1</td>
+                            <td>72%</td>
+                            <td>Recorded</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button type="button" class="instructor-button"
+                    onclick="alert('Assessment results have been published successfully!')">
+                Publish Assessment Results →
+            </button>
+        </section>
+
+    </div>
+</div>

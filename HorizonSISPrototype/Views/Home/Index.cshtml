@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Student Registration";
+}
+
+<div class="registration-page">
+    <section class="welcome-panel">
+        <span class="welcome-tag">ADMISSIONS PORTAL</span>
+        <h1>Your next chapter starts here.</h1>
+        <p>
+            Apply to study at Horizon Private Training College
+            and take the next step towards your future.
+        </p>
+
+        <div class="steps">
+            <div><span>01</span> Complete your personal details</div>
+            <div><span>02</span> Select your preferred course</div>
+            <div><span>03</span> Submit your application</div>
+        </div>
+    </section>
+
+    <section class="registration-card">
+        <h2>Student Registration</h2>
+        <p class="subtitle">Complete the form to apply for admission.</p>
+
+        <form>
+            <h3>Personal Information</h3>
+
+            <div class="form-grid">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter first name" />
+                </div>
+                <div>
+                    <label>Surname</label>
+                    <input type="text" placeholder="Enter surname" />
+                </div>
+                <div>
+                    <label>ID / Passport Number</label>
+                    <input type="text" placeholder="Enter ID or passport number" />
+                </div>
+                <div>
+                    <label>Contact Number</label>
+                    <input type="tel" placeholder="Enter contact number" />
+                </div>
+                <div class="full-width">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter email address" />
+                </div>
+            </div>
+
+            <h3>Course Selection</h3>
+
+            <div class="form-grid">
+                <div>
+                    <label>Preferred Course</label>
+                    <select>
+                        <option>Select a course</option>
+                        <option>Diploma in Information Technology</option>
+                        <option>Certificate in Business Administration</option>
+                        <option>Higher Certificate in Project Management</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Study Mode</label>
+                    <select>
+                        <option>Select study mode</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Online</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="declaration">
+                <input type="checkbox" id="confirmDetails" />
+                <label for="confirmDetails">
+                    I confirm that the information provided is accurate.
+                </label>
+            </div>
+
+            <button type="button" class="submit-button"
+                    onclick="alert('Your application has been submitted successfully!')">
+                Submit Application →
+            </button>
+
+            <p class="login-text">
+                Already registered? <a href="#">Student Login</a>
+            </p>
+        </form>
+    </section>
+</div>

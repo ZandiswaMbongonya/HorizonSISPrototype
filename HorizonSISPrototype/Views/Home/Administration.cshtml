@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Administration Dashboard";
+}
+
+<div class="admin-page">
+
+    <div class="admin-heading">
+        <div>
+            <span class="dashboard-label">ADMINISTRATION PORTAL</span>
+            <h1>Administration Dashboard</h1>
+            <p>Manage academic documents and access college performance reports.</p>
+        </div>
+        <div class="admin-profile">
+            <div class="profile-circle">AD</div>
+            <span>Administrator</span>
+        </div>
+    </div>
+
+    <div class="admin-stats">
+        <div class="admin-stat-card">
+            <span>Total Students</span>
+            <strong>1,250</strong>
+            <small>Registered students</small>
+        </div>
+        <div class="admin-stat-card">
+            <span>Active Courses</span>
+            <strong>18</strong>
+            <small>Current academic year</small>
+        </div>
+        <div class="admin-stat-card">
+            <span>Documents Generated</span>
+            <strong>246</strong>
+            <small>Transcripts and certificates</small>
+        </div>
+        <div class="admin-stat-card">
+            <span>Outstanding Fees</span>
+            <strong>R85,400</strong>
+            <small>Outstanding student balances</small>
+        </div>
+    </div>
+
+    <div class="admin-grid">
+
+        <section class="admin-card">
+            <div class="admin-card-heading">
+                <div>
+                    <h2>Academic Documents</h2>
+                    <p>Generate student transcripts and certificates</p>
+                </div>
+                <span class="admin-icon">DOC</span>
+            </div>
+
+            <div class="admin-form">
+                <label for="studentNumber">Student Number</label>
+                <input type="text" id="studentNumber"
+                       placeholder="Enter student number" />
+
+                <label for="documentType">Document Type</label>
+                <select id="documentType">
+                    <option>Academic Transcript</option>
+                    <option>Certificate</option>
+                </select>
+
+                <button type="button" class="admin-button"
+                        onclick="alert('Academic document generated successfully!')">
+                    Generate Document →
+                </button>
+            </div>
+
+            <div class="document-history">
+                <h3>Recently Generated Documents</h3>
+                <div class="document-row">
+                    <span>HPC20260045 – Academic Transcript</span>
+                    <small>Generated</small>
+                </div>
+                <div class="document-row">
+                    <span>HPC20260032 – Certificate</span>
+                    <small>Generated</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="admin-card">
+            <div class="admin-card-heading">
+                <div>
+                    <h2>Management Reports</h2>
+                    <p>View and generate college performance reports</p>
+                </div>
+                <span class="admin-icon">RPT</span>
+            </div>
+
+            <div class="report-item">
+                <div>
+                    <strong>Student Enrolment Report</strong>
+                    <small>Summary of registered students</small>
+                </div>
+                <button type="button" class="report-button"
+                        onclick="alert('Student Enrolment Report generated!')">
+                    Generate
+                </button>
+            </div>
+
+            <div class="report-item">
+                <div>
+                    <strong>Academic Performance Report</strong>
+                    <small>Student results and course performance</small>
+                </div>
+                <button type="button" class="report-button"
+                        onclick="alert('Academic Performance Report generated!')">
+                    Generate
+                </button>
+            </div>
+
+            <div class="report-item">
+                <div>
+                    <strong>Outstanding Fees Report</strong>
+                    <small>Students with unpaid balances</small>
+                </div>
+                <button type="button" class="report-button"
+                        onclick="alert('Outstanding Fees Report generated!')">
+                    Generate
+                </button>
+            </div>
+
+            <div class="report-item">
+                <div>
+                    <strong>Course Statistics Report</strong>
+                    <small>Enrolment figures per course</small>
+                </div>
+                <button type="button" class="report-button"
+                        onclick="alert('Course Statistics Report generated!')">
+                    Generate
+                </button>
+            </div>
+        </section>
+
+    </div>
+</div>

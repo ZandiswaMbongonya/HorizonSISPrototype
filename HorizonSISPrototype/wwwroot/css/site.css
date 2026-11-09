@@ -1,0 +1,1011 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* Horizon SIS - Student Registration Prototype */
+
+body {
+    background: #f3f6fa;
+    color: #243247;
+}
+
+.registration-page {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 0.85fr 1.4fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.welcome-panel {
+    background: #142b4a;
+    color: white;
+    border-radius: 14px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-tag {
+    color: #67d0c6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcome-panel h1 {
+    font-size: 34px;
+    margin: 25px 0 15px;
+}
+
+.welcome-panel p {
+    color: #dce8f5;
+    line-height: 1.7;
+}
+
+.steps {
+    margin-top: 30px;
+}
+
+    .steps div {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .steps span {
+        color: #67d0c6;
+        font-weight: bold;
+        margin-right: 12px;
+    }
+
+.registration-card {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(20, 43, 74, 0.08);
+}
+
+    .registration-card h2 {
+        color: #142b4a;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+.subtitle {
+    color: #68778b;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.registration-card h3 {
+    color: #245b8f;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5eaf0;
+    padding-bottom: 10px;
+    margin: 25px 0 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+}
+
+    .form-grid label {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+
+    .form-grid input,
+    .form-grid select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #d5dee8;
+        border-radius: 6px;
+        font-size: 13px;
+        background: white;
+    }
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #168b86;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .submit-button:hover {
+        background: #11716d;
+    }
+
+.login-text {
+    text-align: center;
+    font-size: 13px;
+    color: #68778b;
+    margin-top: 18px;
+}
+
+    .login-text a {
+        color: #245b8f;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+@media (max-width: 768px) {
+    .registration-page {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+
+/* Horizon College Navigation */
+
+.horizon-navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #dce4ed;
+}
+
+.horizon-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #142b4a !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.brand-icon {
+    background: #142b4a;
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.horizon-brand small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #68778b;
+    margin-top: 3px;
+}
+
+.horizon-navbar .nav-link {
+    color: #142b4a;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.horizon-navbar .login-link {
+    background: #168b86;
+    color: white !important;
+    padding: 9px 16px;
+    border-radius: 6px;
+}
+
+.horizon-footer {
+    text-align: center;
+    padding: 20px;
+    color: #68778b;
+    font-size: 12px;
+    border-top: 1px solid #dce4ed;
+    margin-top: 25px;
+}
+
+
+/* Horizon SIS - Student Dashboard */
+
+.dashboard-page {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.dashboard-label {
+    color: #168b86;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dashboard-heading h1 {
+    color: #142b4a;
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+.dashboard-heading p {
+    color: #68778b;
+    font-size: 14px;
+}
+
+.student-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #142b4a;
+}
+
+.profile-circle {
+    background: #dcefeb;
+    color: #168b86;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.student-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 22px;
+}
+
+    .student-details div {
+        padding: 5px 15px;
+        border-right: 1px solid #e1e7ee;
+    }
+
+        .student-details div:last-child {
+            border-right: none;
+        }
+
+    .student-details span,
+    .student-details strong {
+        display: block;
+    }
+
+    .student-details span {
+        font-size: 11px;
+        color: #68778b;
+        margin-bottom: 9px;
+    }
+
+    .student-details strong {
+        font-size: 14px;
+        color: #142b4a;
+    }
+
+    .student-details .status-active {
+        color: #168b86;
+    }
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 23px;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(20, 43, 74, 0.04);
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .card-heading h2 {
+        font-size: 17px;
+        color: #142b4a;
+        margin: 0;
+    }
+
+.card-icon {
+    background: #e5f3f1;
+    color: #168b86;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 12px;
+    color: #68778b;
+    margin-top: 15px;
+}
+
+.dashboard-card h3 {
+    color: #142b4a;
+    font-size: 27px;
+    margin: 12px 0 3px;
+}
+
+.small-note {
+    font-size: 11px;
+    color: #68778b;
+}
+
+.progress-track {
+    height: 7px;
+    background: #e8edf2;
+    border-radius: 10px;
+    margin: 18px 0;
+}
+
+.progress-fill {
+    width: 75%;
+    height: 100%;
+    background: #168b86;
+    border-radius: 10px;
+}
+
+.dashboard-link {
+    display: inline-block;
+    color: #245b8f;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.announcement {
+    border-bottom: 1px solid #edf1f5;
+    padding: 13px 0;
+}
+
+    .announcement strong {
+        color: #142b4a;
+        font-size: 13px;
+    }
+
+    .announcement p {
+        color: #68778b;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .announcement small {
+        color: #8996a5;
+        font-size: 10px;
+    }
+
+.class-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.date-box {
+    background: #e5f3f1;
+    color: #168b86;
+    border-radius: 7px;
+    width: 43px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .date-box strong {
+        font-size: 17px;
+    }
+
+    .date-box small {
+        font-size: 9px;
+    }
+
+.class-row div:last-child strong,
+.class-row div:last-child small {
+    display: block;
+}
+
+.class-row div:last-child strong {
+    color: #142b4a;
+    font-size: 12px;
+}
+
+.class-row div:last-child small {
+    color: #68778b;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.record-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #edf1f5;
+    font-size: 12px;
+    color: #42536a;
+}
+
+    .record-item span {
+        color: #245b8f;
+        font-weight: bold;
+    }
+
+@media (max-width: 768px) {
+    .dashboard-grid,
+    .student-details {
+        grid-template-columns: 1fr;
+    }
+
+        .student-details div {
+            border-right: none;
+            border-bottom: 1px solid #e1e7ee;
+            padding: 12px 5px;
+        }
+
+    .dashboard-heading {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+
+/* Horizon SIS - Instructor Dashboard */
+
+.instructor-page {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.instructor-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+    .instructor-heading h1 {
+        color: #142b4a;
+        font-size: 30px;
+        margin: 8px 0;
+    }
+
+    .instructor-heading p {
+        color: #68778b;
+        font-size: 14px;
+    }
+
+.instructor-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #142b4a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.instructor-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+    .stat-card span,
+    .stat-card strong,
+    .stat-card small {
+        display: block;
+    }
+
+    .stat-card span {
+        color: #68778b;
+        font-size: 12px;
+    }
+
+    .stat-card strong {
+        color: #142b4a;
+        font-size: 27px;
+        margin: 12px 0 5px;
+    }
+
+    .stat-card small {
+        color: #8996a5;
+        font-size: 11px;
+    }
+
+.instructor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.instructor-card {
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    padding: 23px;
+    box-shadow: 0 5px 18px rgba(20, 43, 74, 0.04);
+}
+
+.instructor-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .instructor-card-heading h2 {
+        color: #142b4a;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .instructor-card-heading p {
+        color: #68778b;
+        font-size: 12px;
+        margin: 6px 0 0;
+    }
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf1f5;
+    gap: 10px;
+}
+
+    .course-item strong {
+        color: #142b4a;
+        font-size: 13px;
+    }
+
+    .course-item span {
+        color: #168b86;
+        font-size: 11px;
+    }
+
+.material-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+    .material-item strong,
+    .material-item small {
+        display: block;
+    }
+
+    .material-item strong {
+        color: #142b4a;
+        font-size: 12px;
+    }
+
+    .material-item small {
+        color: #68778b;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+.uploaded-status,
+.published-status {
+    color: #168b86;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.upload-area {
+    background: #f4f8fb;
+    border: 1px dashed #aebdce;
+    border-radius: 8px;
+    padding: 18px;
+    margin-top: 18px;
+}
+
+    .upload-area strong {
+        color: #245b8f;
+        font-size: 13px;
+    }
+
+    .upload-area p {
+        color: #68778b;
+        font-size: 11px;
+        margin: 7px 0 12px;
+    }
+
+    .upload-area input {
+        width: 100%;
+        font-size: 11px;
+    }
+
+.assessment-card {
+    grid-column: 1 / -1;
+}
+
+.assessment-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+    .assessment-summary strong,
+    .assessment-summary small {
+        display: block;
+    }
+
+    .assessment-summary strong {
+        color: #142b4a;
+        font-size: 12px;
+    }
+
+    .assessment-summary small {
+        color: #68778b;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+.assessment-status {
+    color: #b7791f;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.marks-table {
+    margin-top: 22px;
+    overflow-x: auto;
+}
+
+    .marks-table h3 {
+        color: #142b4a;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .marks-table table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 11px;
+    }
+
+    .marks-table th {
+        background: #f2f6fa;
+        color: #142b4a;
+        text-align: left;
+        padding: 12px;
+    }
+
+    .marks-table td {
+        padding: 12px;
+        border-bottom: 1px solid #edf1f5;
+        color: #42536a;
+    }
+
+.instructor-button {
+    background: #168b86;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+    .instructor-button:hover {
+        background: #11716d;
+    }
+
+@media (max-width: 768px) {
+    .instructor-stats,
+    .instructor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment-card {
+        grid-column: auto;
+    }
+
+    .instructor-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+/* Horizon SIS - Administration Dashboard */
+
+.admin-page {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.admin-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+    .admin-heading h1 {
+        color: #142b4a;
+        font-size: 30px;
+        margin: 8px 0;
+    }
+
+    .admin-heading p {
+        color: #68778b;
+        font-size: 14px;
+    }
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #142b4a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.admin-stat-card {
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+    .admin-stat-card span,
+    .admin-stat-card strong,
+    .admin-stat-card small {
+        display: block;
+    }
+
+    .admin-stat-card span {
+        color: #68778b;
+        font-size: 12px;
+    }
+
+    .admin-stat-card strong {
+        color: #142b4a;
+        font-size: 25px;
+        margin: 12px 0 5px;
+    }
+
+    .admin-stat-card small {
+        color: #8996a5;
+        font-size: 11px;
+    }
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-card {
+    background: white;
+    border: 1px solid #e1e7ee;
+    border-radius: 10px;
+    padding: 23px;
+    box-shadow: 0 5px 18px rgba(20, 43, 74, 0.04);
+}
+
+.admin-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .admin-card-heading h2 {
+        color: #142b4a;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .admin-card-heading p {
+        color: #68778b;
+        font-size: 12px;
+        margin: 6px 0 0;
+    }
+
+.admin-icon {
+    background: #e4f4f2;
+    color: #168b86;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.admin-form label {
+    display: block;
+    color: #42536a;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 13px 0 6px;
+}
+
+.admin-form input,
+.admin-form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #dce3eb;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #42536a;
+    background: white;
+}
+
+.admin-button {
+    background: #168b86;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 17px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+    .admin-button:hover,
+    .report-button:hover {
+        background: #11716d;
+    }
+
+.document-history {
+    margin-top: 25px;
+}
+
+    .document-history h3 {
+        color: #142b4a;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+.document-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f5;
+    color: #42536a;
+    font-size: 11px;
+}
+
+    .document-row small {
+        color: #168b86;
+        font-weight: bold;
+    }
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+    .report-item strong,
+    .report-item small {
+        display: block;
+    }
+
+    .report-item strong {
+        color: #142b4a;
+        font-size: 12px;
+    }
+
+    .report-item small {
+        color: #68778b;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+.report-button {
+    background: #168b86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .admin-stats,
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
